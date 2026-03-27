@@ -1,0 +1,34 @@
+# Root environment and dependency folders
+.venv/
+venv/
+
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Backend local runtime files
+Backend/.venv/
+Backend/instance/*.db
+Backend/instance/*.sqlite*
+Backend/.pytest_cache/
+Backend/.mypy_cache/
+
+# Frontend dependencies/build output
+Frontend/node_modules/
+Frontend/dist/
+
+# Local environment files
+.env
+*.env
+Frontend/.env
+Backend/.env
+
+# Editor/OS artifacts
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
