@@ -11,7 +11,8 @@ import type {
   ChatResponse
 } from '../types/api';
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:5000';
+const env = (import.meta as ImportMeta & { env?: Record<string, string | undefined> }).env || {};
+const API_BASE = env.VITE_API_BASE_URL || 'http://127.0.0.1:5000';
 
 type RequestMethod = 'GET' | 'POST';
 
